@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <div>
-          <Typography>тест</Typography>
+          <Typography variant="body1">тест</Typography>
         </div>
         <p>
           Get started by editing&nbsp;
