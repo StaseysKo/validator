@@ -25,6 +25,7 @@ export default function Home() {
               height={24}
               priority
             />
+            <Typography> тест </Typography>
           </a>
         </div>
       </div>
