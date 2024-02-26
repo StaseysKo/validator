@@ -2,7 +2,7 @@ import * as React from 'react';
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import Button from '@mui/material/Button';
+import { Typography, Button } from '@mui/material';
 
 
 export default function Home() {
@@ -43,7 +43,9 @@ export default function Home() {
         />
       </div>
 
-      
+      <Typography variant="h1" component="h2">
+        h1. Heading
+      </Typography>
       <Button variant="contained">Hello world</Button>
 
       <div className={styles.grid}>
