@@ -18,9 +18,9 @@ export default function RootLayout(props) {
   return (
     <html lang="en">
       <body>
-+        <AppRouterCacheProvider>
+        <AppRouterCacheProvider>
           {props.children}
-+        </AppRouterCacheProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
