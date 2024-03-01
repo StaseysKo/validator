@@ -1,6 +1,4 @@
 
-// theme
-import ThemeProvider from 'src/theme';
 
 // ----------------------------------------------------------------------
 import CallBackButton from 'src/components/CallBackButton';
@@ -14,9 +12,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <AppRouterCacheProvider {...pageProps}>
-      <ThemeProvider>
         <Component {...pageProps} />
-      </ThemeProvider>
     </AppRouterCacheProvider>
   );
 }
