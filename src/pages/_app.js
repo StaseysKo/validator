@@ -16,12 +16,10 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 
 export default function App({ Component, pageProps }) {
 
-  const getLayout = Component.getLayout ?? ((page) => page);
-
   return (
     <AppRouterCacheProvider {...pageProps}>
       <ThemeProvider>
-        {getLayout(<Component {...pageProps} />)}
+        <Component {...pageProps} />
       </ThemeProvider>
     </AppRouterCacheProvider>
   );
