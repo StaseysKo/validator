@@ -1,8 +1,4 @@
-import 'src/styles/globals.css';
-import 'src/styles/iconsStyle.css';
-import 'src/styles/logoStyle.css';
 
-// ----------------------------------------------------------------------
 // theme
 import ThemeProvider from 'src/theme';
 
