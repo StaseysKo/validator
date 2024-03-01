@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.MuiContainer-root {
+  max-width: 1600px !important;
+}
+
+@media (min-width: 1025px) {
+  .MuiContainer-root {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+
+.tippy-box[data-theme~='custom'] {
+  background-color: #454F5B;
+
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #454F5B;
+}
+
+
+.css-i8txb6-MuiInputBase-input-MuiFilledInput-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px transparent inset;
+  box-shadow: 0 0 0 100px transparent inset;
+}
+
+
+.css-1swivyk-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px transparent inset;
+  box-shadow: 0 0 0 100px transparent inset;
+}
+
+.css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root {
+  z-index: 9999;
+}
+
+.css-1sucic7 {
+  z-index: 9999 !important;
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://chistograd-pmk.ru/
+
+# Sitemaps
+Sitemap: https://chistograd-pmk.ru/sitemap.xml
