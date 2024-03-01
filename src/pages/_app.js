@@ -3,8 +3,6 @@ import 'src/styles/iconsStyle.css';
 import 'src/styles/logoStyle.css';
 
 // ----------------------------------------------------------------------
-// next
-import Head from 'next/head';
 // theme
 import ThemeProvider from 'src/theme';
 
@@ -22,15 +20,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <AppRouterCacheProvider {...pageProps}>
-      <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no" />
-      </Head>
-
-
       <ThemeProvider>
         {getLayout(<Component {...pageProps} />)}
       </ThemeProvider>
-
     </AppRouterCacheProvider>
   );
 }
