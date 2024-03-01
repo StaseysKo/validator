@@ -40,6 +40,8 @@ import CallBackButton from 'src/components/CallBackButton';
 
 // ----------------------------------------------------------------------
 
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+
 App.propTypes = {
   Component: PropTypes.func,
   pageProps: PropTypes.object,
@@ -87,7 +89,7 @@ export default function App({ Component, pageProps }) {
   const getLayout = Component.getLayout ?? ((page) => page);
 
   return (
-    <>
+    <AppRouterCacheProvider {...pageProps}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no" />
       </Head>
@@ -99,6 +101,6 @@ export default function App({ Component, pageProps }) {
           {getLayout(<Component {...pageProps} />)}
         </ThemeProvider>
       </LocalizationProvider>
-    </>
+    </AppRouterCacheProvider>
   );
 }
